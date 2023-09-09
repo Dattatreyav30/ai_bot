@@ -9,11 +9,10 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-const chatRoute = require("./routes/chatRoute"); 
+const chatRoute = require("./routes/chatRoute");
+app.use(cors());
 
 app.use(chatRoute);
-
-app.use(cors());
 
 app.get("/test", (req, res, next) => {
   res.status(200).json({ message: "succesfull" });
