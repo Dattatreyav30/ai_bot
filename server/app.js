@@ -18,6 +18,6 @@ app.get("/test", (req, res, next) => {
   res.status(200).json({ message: "succesfull" });
 });
 
-app.listen(3000, () => {
+app.listen(5000, () => {
   console.log("port running on 3000");
 });

@@ -7,16 +7,16 @@ sendButton.addEventListener("click", async () => {
   if (message !== "") {
     appendMessage("You", message);
 
+    const otherInput = `Our Employee Code of Conduct company policy outlines our expectations regarding employees behaviour towards their colleagues, supervisors and overall organization. We promote freedom of expression and open communication. But we expect all employees to follow our code of conduct. They should avoid offending, participating in serious disputes and disrupting our workplace. We also expect them to foster a well-organized, respectful and collaborative environment , our company name is aspire, answer based on the above information to this question  : ${message}`;
+
     try {
-      const response = await fetch("http://localhost:3000/chat", {
+      const response = await fetch("http://localhost:5000/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ message }),
+        body: JSON.stringify({ otherInput: otherInput }),
       });
-      console.log(response);
-
       if (!response.ok) {
         throw new Error("Failed to fetch");
       }

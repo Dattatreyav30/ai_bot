@@ -4,7 +4,7 @@ require("dotenv").config();
 
 exports.postChat = async (req, res) => {
   try {
-    const newInput = req.body.message;
+    const newInput = req.body.otherInput;
 
     const openai = new openAI({
       apiKey: process.env.OPEN_AI_API_KEY,
@@ -13,7 +13,7 @@ exports.postChat = async (req, res) => {
     const chatCompletion = await openai.chat.completions.create({
       model: "gpt-3.5-turbo",
       messages: [{ role: "user", content: newInput }],
-      max_tokens: 20,
+      max_tokens: 200,
     });
     res.status(200).json({ message: chatCompletion.choices[0].message});
   } catch (err) {
