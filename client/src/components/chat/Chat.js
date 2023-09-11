@@ -21,7 +21,7 @@ const Chat = () => {
       body: JSON.stringify(input),
     });
     const responseData = response.json();
-    
+
     setInput({ chat: "" });
   };
   return (
@@ -33,7 +33,7 @@ const Chat = () => {
             <strong>User1 : {qn}</strong>
           </div>
         ))}
-      </div>
+      </div>        
       <input
         onChange={onChangeInputHandler}
         type="text"
