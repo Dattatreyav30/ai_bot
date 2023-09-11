@@ -1,6 +1,18 @@
 body {
   font-family: Arial, sans-serif;
 }
+.header {
+  font-family: "Arial", sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 #chat-container {
   align-items: center;
   width: 900px;
@@ -50,6 +62,7 @@ body {
   background-color: #e1c6c6;
   margin-bottom: 10px;
 }
+
 .SendingButton {
   cursor: not-allowed;
 }

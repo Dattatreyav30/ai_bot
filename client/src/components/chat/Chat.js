@@ -43,7 +43,7 @@ const Chat = () => {
 
   return (
     <form id="chat-container" onSubmit={onClickEventHandler}>
-      <h2>AI Chatbot</h2>
+      <h2 className="header">AI Chatbot</h2>
       <div id="chat-messages">
         {questions.map((data, index) => (
           <div key={index}>
