@@ -1,9 +1,13 @@
 import "./App.css";
-import Chat from "./components/chat/Chat"
+import Chat from "./components/chat/Chat";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <Chat/>
+    <>
+      <Header />
+      <Chat />
+    </>
   );
 }
 

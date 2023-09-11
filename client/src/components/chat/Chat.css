@@ -4,7 +4,7 @@ body {
 .header {
   font-family: "droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif";
   font-size: 36px;
-  color: #847125;
+  color: #DAA127;
   background-color: rgb(10, 21, 49);
   padding: 10px 20px;
   border-radius: 10px;
@@ -42,7 +42,7 @@ body {
   width: 100%;
   padding: 10px;
   background-color: #21172c;
-  color: #847125;
+  color: #DAA127;
   border: none;
   border-radius: 8px;
   cursor: pointer;
