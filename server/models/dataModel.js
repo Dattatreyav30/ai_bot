@@ -8,10 +8,10 @@ const Data = sequelize.define("UserData", {
     primaryKey: true,
   },
   question: {
-    type: Sequelize.STRING,
+    type: Sequelize.TEXT,
   },
   answer: {
-    type: Sequelize.STRING,
+    type: Sequelize.TEXT,
   },
 });
 

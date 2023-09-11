@@ -2,7 +2,7 @@ const express = require("express");
 
 const bodyParser = require("body-parser");
 
-const sequelize = require("./util/database")
+const sequelize = require("./util/database");
 
 const cors = require("cors");
 
@@ -20,7 +20,7 @@ app.get("/test", (req, res, next) => {
   res.status(200).json({ message: "succesfull" });
 });
 
-sequelize.sync()
+sequelize.sync();
 app.listen(5000, () => {
   console.log("port running on 5000");
 });

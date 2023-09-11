@@ -4,6 +4,8 @@ const UserData = require("../models/dataModel");
 
 require("dotenv").config();
 
+const data = require("../util/data");
+
 exports.postChat = async (req, res) => {
   try {
     const newInput = req.body.chat;
@@ -14,7 +16,7 @@ exports.postChat = async (req, res) => {
 
     const chatCompletion = await openai.chat.completions.create({
       model: "gpt-3.5-turbo",
-      messages: [{ role: "user", content: newInput }],
+      messages: [{ role: "user", content: data + newInput }],
       max_tokens: 200,
     });
 

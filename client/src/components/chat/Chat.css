@@ -2,10 +2,10 @@ body {
   font-family: Arial, sans-serif;
 }
 .header {
-  font-family: "Arial", sans-serif;
+  font-family: "droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif";
   font-size: 36px;
-  color: #ffffff;
-  background-color: #007bff;
+  color: #847125;
+  background-color: rgb(10, 21, 49);
   padding: 10px 20px;
   border-radius: 10px;
   text-align: center;
@@ -36,30 +36,35 @@ body {
   border-radius: 5px;
 }
 #send-button {
+  font-family: "droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif";
+  font-size: large;
+  font-weight: 900;
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
-  color: white;
+  background-color: #21172c;
+  color: #847125;
   border: none;
-  border-radius: 15px;
+  border-radius: 8px;
   cursor: pointer;
 }
 #send-button:hover {
   background-color: #ccc;
-  background-color: #0056b3;
+  background-color: #25292d;
 }
 #chat-messages div strong:first-child {
-  color: #007bff;
+  font-family: "droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif";
+  color: #040404;
 }
 
 #chat-messages div strong:last-child {
-  color: #28a745;
+  font-family: "droid-serif-w01-regular,droid-serif-w02-regular,droid-serif-w10-regular,serif";
+  color: #040404;
 }
 
 #chat-messages div {
   padding: 1rem;
   border-radius: 5px;
-  background-color: #e1c6c6;
+  background-color: #efe6e6;
   margin-bottom: 10px;
 }
 
