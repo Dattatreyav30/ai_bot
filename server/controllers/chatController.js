@@ -4,8 +4,8 @@ require("dotenv").config();
 
 exports.postChat = async (req, res) => {
   try {
-    const newInput = req.body.otherInput;
-
+    const newInput = req.body.chat;
+    
     const openai = new openAI({
       apiKey: process.env.OPEN_AI_API_KEY,
     });

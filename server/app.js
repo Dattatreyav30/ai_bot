@@ -19,5 +19,5 @@ app.get("/test", (req, res, next) => {
 });
 
 app.listen(5000, () => {
-  console.log("port running on 3000");
+  console.log("port running on 5000");
 });
