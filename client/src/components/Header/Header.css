@@ -3,10 +3,28 @@
   align-items: center;
   flex-direction: row;
   background-color: rgb(10, 21, 49);
+  padding: 20px;
 }
 
 .header-image {
-    margin-right: 10rem;
-  width: 200px;
-  height: 100px;
+  width: 100px; 
+  height: 60px;
+  margin-right: 1rem;
+}
+
+.header {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column; 
+    text-align: center; 
+    padding: 10px;
+  }
+
+  .header-image {
+    margin-right: 0;
+    margin-bottom: 1rem; 
+  }
 }
