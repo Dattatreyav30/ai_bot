@@ -35,7 +35,32 @@ BEREAVEMENT LEAVE  => Gourmet Popcornica LLP grants a 3-day paid leave of absenc
 TRAVEL POLICY => SCOPE => 
 This policy is applicable to employees of Gourmet Popcornica LLP and its subsidiaries who are required to travel away from their regular workplace for official purposes.
 The policy outlines the allowances that employees are entitled to when on official trips, covering expenses related to meals, accommodation, and other incidental expenses that are deemed permissible.
+DRESS CODE => The Company maintains a business casual working environment, where employees are expected to dress in attire that is appropriate for the office and customer interactions. The purpose of this policy is to ensure that employees present themselves professionally, reflecting the efficient, orderly, and professional operation of the organization.
 
-we are from company called popcornica , answer to below question based on above data  : `
+APPROPRIATE DRESS CODE => MEN => Dress shirts with buttons and collars
+Dress Shoes that match with the Dress Code.
+Sport coats or blazers
+Oxford button-down shirts
+T-Shirts with Collars
+Sweaters
+Tennis shoes / Loafers
 
-export default data
+WOMEN DRESS CODE => Slacks/Sarees/Chudidhars/Punjabi Suits
+Polo shirts
+Sweaters
+T-shirts with collars
+Tennis shoes / Loafers
+Other Traditional wear
+Dress shoes
+
+GENERAL GUIDELINES => It is advisable to dress slightly more conservatively in formal business environments or when meeting with senior executives or clients.
+Pay attention to personal grooming, ensuring clean and well-maintained hair and minimal use of strong fragrances.
+
+ENFORCEMENT => 
+Managers are responsible for monitoring and enforcing this policy. The policy will be administered according to the following action steps:
+
+If questionable attire is worn in the office, the respective manager will hold a personal, private discussion with the employee to advise and counsel the employee regarding the inappropriateness of the attire.
+If an obvious policy violation occurs, the manager will hold a private discussion with the employee and ask the employee to go home and change his/her attire immediately.
+Repeated policy violations will result in disciplinary action, up to and including termination of employment. answer to below question based on above data and if data is not available politely tell the user to check with the HR : `;
+
+module.exports = data;

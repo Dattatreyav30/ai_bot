@@ -1,10 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Chat.css";
 
 const Chat = () => {
   const [input, setInput] = useState("");
   const [questions, setQuestions] = useState([]);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+
+  const messageRef = useRef(null);
+
+  const scrollToBottom = () => {
+    messageRef.current.scrollTop = messageRef.current.scrollHeight;
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [questions]);
 
   const onChangeInputHandler = (e) => {
     setInput(e.target.value);
@@ -43,13 +53,12 @@ const Chat = () => {
 
   return (
     <form id="chat-container" onSubmit={onClickEventHandler}>
-      <h2 className="header">AI Chatbot</h2>
-      <div id="chat-messages">
+      <div id="chat-messages" ref={messageRef}>
         {questions.map((data, index) => (
           <div key={index}>
-            <strong>User1 : {data.qn}</strong>
+            <p>You : {data.qn}</p>
             <br></br>
-            <strong>Bot : {data.ans}</strong>
+            <p>Bot : {data.ans}</p>
           </div>
         ))}
       </div>
@@ -57,7 +66,7 @@ const Chat = () => {
         onChange={onChangeInputHandler}
         type="text"
         id="chat-input"
-        placeholder="Type your message..."
+        placeholder="Ask anything about HR policies..."
         value={input}
       />
       <button
