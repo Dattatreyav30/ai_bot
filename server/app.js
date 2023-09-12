@@ -2,11 +2,13 @@ const express = require("express");
 
 const bodyParser = require("body-parser");
 
-const sequelize = require("./util/database");
+require("dotenv").config();
 
 const cors = require("cors");
 
 const app = express();
+
+const mongoose = require("mongoose");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -20,6 +22,8 @@ app.get("/test", (req, res, next) => {
   res.status(200).json({ message: "succesfull" });
 });
 
-app.listen(5000, () => {
-  console.log("port running on 5000");
+mongoose.connect(process.env.MONGODB_CONNECTION).then((res) => {
+  console.log("connected");
+  app.listen(5000);
 });
+   

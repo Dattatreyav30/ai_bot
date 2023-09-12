@@ -20,10 +20,12 @@ exports.postChat = async (req, res) => {
       max_tokens: 200,
     });
 
-    UserData.create({
+    const userData = new UserData({
       question: newInput,
       answer: chatCompletion.choices[0].message.content,
     });
+
+    await userData.save();
     res.status(200).json({ message: chatCompletion.choices[0].message });
   } catch (err) {
     console.log(err);
